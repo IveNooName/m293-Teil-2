@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 .env
-public/tmp/.htpasswd
+/tmp/.htpasswd
+.htaccess

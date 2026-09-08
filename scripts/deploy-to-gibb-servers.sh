@@ -9,16 +9,17 @@ set -a
 source .env
 set +a
 
-npm run build
-
-# Sicherheitscheck: existiert der Build überhaupt?
-[ -f "$ROOT/dist/index.html" ] || { echo "dist/index.html fehlt – Build kaputt?"; exit 1; }
+[ -f "$ROOT/src/index.html" ] || { echo "src/index.html fehlt – Projekt kaputt?"; exit 1; }
 
 lftp -c "
 set sftp:auto-confirm yes;
 open -u $SFTP_USER,$SFTP_PASS sftp://$SFTP_HOST;
-lcd $ROOT/dist;
+lcd $ROOT/src;
 cd httpdocs;
 mirror -R --delete --verbose \
+  --exclude-glob .git/ \
+  --exclude-glob .idea/ \
+  --exclude-glob .git \
+  --exclude-glob .idea \
   ./ ./
 "

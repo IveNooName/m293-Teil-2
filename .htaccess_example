@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Passwortgeschützter Bereich"
+AuthUserFile /srv/vhosts/${SFTP_HOST}/httpdocs/tmp/.htpasswd
+Require valid-user
