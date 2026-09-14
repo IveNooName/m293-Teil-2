@@ -3,7 +3,7 @@
         display: flex;
         justify-content: center;
     }
-    
+
     &.left {
         max-width: 230px;
         width: 100%;
@@ -11,7 +11,7 @@
         padding-right: 14px;
         font-style: normal;
     }
-    
+
     &.right {
         max-width: 230px;
         width: 100%;
@@ -47,15 +47,17 @@
     }
 }
 
-.readme-button {
-    height: 60px;
-    border-radius: 45px;
-    margin: 0 auto 16px auto;
-    display: block;
-    padding-right: 16px;
-    padding-left: 16px;
-    width: 100%;
+.article {
+    &.readme-button {
+        height: 60px;
+        border-radius: 45px;
+        margin: 0 auto 16px auto;
+        display: block;
+        padding-right: 16px;
+        padding-left: 16px;
+        width: 100%;
 
-    font-size: 22px;
-    font-weight: bold;
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
