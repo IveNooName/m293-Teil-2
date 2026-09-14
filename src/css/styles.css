@@ -60,4 +60,28 @@
         font-size: 22px;
         font-weight: bold;
     }
+
+    &.image {
+        width: 100%;
+        display: block;
+    }
+
+    &.card {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    &.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    &.section-title {
+        padding-bottom: 30px
+    }
 }
