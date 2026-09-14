@@ -27,21 +27,23 @@
 
 }
 
-.skill-container {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
+.skill {
+    &.container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
 
-.skill-card {
-    min-width: 225px;
-    max-width: 250px;
-    padding-bottom: 16px;
-}
+    &.card {
+        min-width: 225px;
+        max-width: 250px;
+        padding-bottom: 16px;
+    }
 
-.skill-circle {
-    border: #D9D9D9 1px solid;
+    &.circle {
+        border: #D9D9D9 1px solid;
+    }
 }
 
 .readme-button {
