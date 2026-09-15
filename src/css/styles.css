@@ -60,6 +60,7 @@
 
         font-size: 22px;
         font-weight: bold;
+        align-content: center;
 
         @media (max-width: 350px) {
             height: 45px;
