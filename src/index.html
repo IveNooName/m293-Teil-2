@@ -24,9 +24,9 @@
     </div>
 
     <div class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium" id="navDemo">
-        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./index.html#skills">My Skills</a>
-        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./index.html#articles">Articles</a>
-        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./index.html#contact">Contact</a>
+        <a class="w3-bar-item w3-button" href="./index.html#skills">My Skills</a>
+        <a class="w3-bar-item w3-button" href="./index.html#articles">Articles</a>
+        <a class="w3-bar-item w3-button" href="./index.html#contact">Contact</a>
     </div>
 </div>
 
@@ -222,7 +222,7 @@
 
     // Used to toggle the menu on smaller screens when clicking on the menu button
     function openNav() {
-        var x = document.getElementById("navDemo");
+        const x = document.getElementById("navDemo");
         if (x.className.indexOf("w3-show") === -1) {
             x.className += " w3-show";
         } else {

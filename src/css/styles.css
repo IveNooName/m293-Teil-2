@@ -60,6 +60,12 @@
 
         font-size: 22px;
         font-weight: bold;
+
+        @media (max-width: 350px) {
+            height: 45px;
+            font-size: 18px;
+            font-weight: bold;
+        }
     }
 
     &.image {
