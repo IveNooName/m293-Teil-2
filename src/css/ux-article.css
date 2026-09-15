@@ -3,3 +3,11 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.info-icon {
+    margin-right: 4px;
+}
+
+.claude-icon {
+    margin-right: 1px;
+}
