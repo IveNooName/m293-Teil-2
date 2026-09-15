@@ -11,3 +11,9 @@
 .claude-icon {
     margin-right: 1px;
 }
+
+code {
+    background-color: #eeeeee;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
