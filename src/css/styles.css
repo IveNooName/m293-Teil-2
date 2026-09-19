@@ -137,3 +137,13 @@
         margin-top: 0;
     }
 }
+
+.version-line {
+    border-top: 2px #262626 solid;
+    width: 100%;
+}
+.version-text {
+    text-align: left;
+    color: #666666;
+    margin: 0;
+}
