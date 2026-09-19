@@ -11,8 +11,6 @@ function openNav() {
 function detectApplePlatform() {
     const ua = navigator.userAgent;
 
-    console.log(ua)
-
     if (/iPhone/.test(ua)) return true;
     if (/iPad/.test(ua)) return true;
     if (/Macintosh/.test(ua)) return true;
@@ -26,8 +24,6 @@ function setDeviceResult() {
     const texttip = document.getElementById("modal-coolness-tip");
     const result = detectApplePlatform();
 
-    console.log(result);
-    
     if(result) {
         textResult.textContent = "YES!!!";
         texttip.style.display = "none";
