@@ -11,21 +11,14 @@ function openNav() {
 function detectApplePlatform() {
     const ua = navigator.userAgent;
 
-    if (/Apple.*Vision|XRSimulator/i.test(ua)) {
-        return true;
-    }
+    console.log(ua)
 
-    switch (ua.toLowerCase()) {
-        case "iphone":
-            return true;
-        case "ipad":
-            return true;
-        case "macintosh":
-            return true;
-        default:
-            return false;
-    }
-
+    if (/iPhone/.test(ua)) return true;
+    if (/iPad/.test(ua)) return true;
+    if (/Macintosh/.test(ua)) return true;
+    if (/Apple.*Vision|XRSimulator/i.test(ua)) return true;
+    
+    return false;
 }
 
 function setDeviceResult() {
@@ -34,8 +27,8 @@ function setDeviceResult() {
     const result = detectApplePlatform();
 
     console.log(result);
-
-    if (result) {
+    
+    if(result) {
         textResult.textContent = "YES!!!";
         texttip.style.display = "none";
     } else {
@@ -48,7 +41,7 @@ function setDeviceResult() {
 function showModal() {
     const modal = document.getElementById("modal");
     modal.style.display = "block";
-
+    
     setDeviceResult();
 }
 
