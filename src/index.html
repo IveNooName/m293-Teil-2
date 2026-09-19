@@ -37,30 +37,28 @@
     <img alt="a desktop wallpaper" src="https://raw.githubusercontent.com/IveNooName/Bucket/refs/heads/main/m293-Teil-2/golden-gate.png" class="golden-gate-image">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
         <button class="w3-button w3-xlarge w3-theme w3-hover-teal"
-                onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" title="Go To W3.CSS">
+                onclick="showModal()" title="Go To W3.CSS">
             Jonas Berger
         </button>
     </div>
 </div>
 
 <!-- Modal TODO: CHANGE -->
-<div class="w3-modal" id="id01">
+<div class="w3-modal" id="modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
         <header class="w3-container w3-teal w3-display-container">
             <span class="w3-button w3-teal w3-display-topright"
-                  onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;">
+                  onclick="hideModal()">
                 <i class="bi bi-x-lg"></i>
             </span>
-            <h4>Oh snap! We just showed you a modal..</h4>
-            <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+            <h4>Am I a cool guy/girl?</h4>
         </header>
-        <div class="w3-container">
-            <p>Cool huh? Ok, enough teasing around..</p>
-            <p>Go to our <a class="w3-text-teal" href="https://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a>
-                to learn more!</p>
+        <div class="modal container">
+            <p id="modal-coolness-result" class="modal result"></p>
+            <p id="modal-coolness-tip" class="modal tip"></p>
         </div>
         <footer class="w3-container w3-teal">
-            <p>Modal footer</p>
+            <div class="modal color-bar"></div>
         </footer>
     </div>
 </div>
@@ -142,40 +140,6 @@
                 </a>
             </div>
         </article>
-    </div>
-</div>
-
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-    <div class="w3-row">
-        <div class="w3-col m5">
-            <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-            <h3>Address</h3>
-            <p>Swing by for a cup of coffee, or whatever.</p>
-            <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Chicago, US</p>
-            <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+00 1515151515</p>
-            <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;test@test.com</p>
-        </div>
-        <div class="w3-col m7">
-            <form action="https://www.w3schools.com/action_page.php"
-                  class="w3-container w3-card-4 w3-padding-16 w3-white" target="_blank">
-                <div class="w3-section">
-                    <label>Name</label>
-                    <input class="w3-input" name="Name" required="" type="text">
-                </div>
-                <div class="w3-section">
-                    <label>Email</label>
-                    <input class="w3-input" name="Email" required="" type="text">
-                </div>
-                <div class="w3-section">
-                    <label>Message</label>
-                    <input class="w3-input" name="Message" required="" type="text">
-                </div>
-                <input checked="" class="w3-check" name="Like" type="checkbox">
-                <label>I Like it!</label>
-                <button class="w3-button w3-right w3-theme" type="submit">Send</button>
-            </form>
-        </div>
     </div>
 </div>
 

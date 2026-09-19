@@ -7,3 +7,44 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+function detectApplePlatform() {
+    const ua = navigator.userAgent;
+
+    console.log(ua)
+
+    if (/iPhone/.test(ua)) return true;
+    if (/iPad/.test(ua)) return true;
+    if (/Macintosh/.test(ua)) return true;
+    if (/Apple.*Vision|XRSimulator/i.test(ua)) return true;
+
+    return false;
+}
+
+function setDeviceResult() {
+    const textResult = document.getElementById("modal-coolness-result");
+    const textSubtitle = document.getElementById("modal-coolness-tip");
+    const result = detectApplePlatform();
+
+    console.log(result);
+    
+    if(result) {
+        textResult.textContent = "YES!!!";
+    } else {
+        textResult.textContent = "no";
+        textSubtitle.textContent = "kauf doch endlich mal apple geräte";
+        textSubtitle.style.display = "block";
+    }
+}
+
+function showModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "block";
+    
+    setDeviceResult();
+}
+
+function hideModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+}

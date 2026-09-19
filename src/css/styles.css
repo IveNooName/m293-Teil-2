@@ -116,3 +116,24 @@
     min-height: 350px;
     max-height: 600px;
 }
+
+.modal {
+    &.color-bar {
+        height: 0.5em;
+    }
+    &.container {
+        padding: 20px 16px;
+    }
+    &.result {
+        font-weight: bolder;
+        font-size: 2em;
+        margin: 0;
+    }
+    &.tip {
+        display: none;
+        
+        font-weight: lighter;
+        font-size: 0.25em;
+        margin-top: 0;
+    }
+}
