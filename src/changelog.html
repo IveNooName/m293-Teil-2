@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Changelog</title>
+    <link href="css/w3.css" rel="stylesheet">
+    <link href="css/w3-theme-black.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/changelog.css" rel="stylesheet">
+    <link href="img/favicon.svg" rel="icon">
+    <script src="./main.js"></script>
+</head>
+<body>
+
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+           href="javascript:void(0);" onclick="openNav()"><i class="bi bi-list"></i></a>
+        <a class="w3-bar-item w3-button w3-teal" href="./index.html#">
+            <i class="bi bi-house-fill"></i>
+        </a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./index.html#skills">My Skills</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./index.html#articles">Articles</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./index.html#imprint">Contact</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="./changelog.html">Changelog</a>
+    </div>
+
+    <div class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+        <a class="w3-bar-item w3-button" href="./index.html#skills">My Skills</a>
+        <a class="w3-bar-item w3-button" href="./index.html#articles">Articles</a>
+        <a class="w3-bar-item w3-button" href="./index.html#imprint">Contact</a>
+        <a class="w3-bar-item w3-button" href="./changelog.html">Changelog</a>
+    </div>
+</div>
+
+<article class="changelog container">
+    <h1>Changelog — Initial Release <i class="bi bi-arrow-right-short"></i> v1.0</h1>
+    <ul>
+        <li>Replaced Font-Awesome icons with Bootstrap Icons</li>
+        <li>Removed non-functional contact form and contact section</li>
+        <li>Added custom favicon</li>
+        <li>Website now supports down to 300px width</li>
+        <li>Replaced generic modal popup with an interactive feature</li>
+        <li>Replaced original template navigation (Team/Work/Price/Search/Dropdown) with actual site sections (Skills,
+            Articles, Contact)
+        </li>
+        <li>Fixed button/layout overflow on smaller screens</li>
+        <li>Extracted inline CSS into reusable classes</li>
+        <li>Added two content articles (UX-Basics, Accessibility) with matching site navigation</li>
+        <li>Migrated images from local folder to an external asset repository</li>
+        <li>Removed unused template placeholder images</li>
+        <li>Added skill/language icons (Java, Python, TypeScript, C#)</li>
+        <li>Rebuilt the footer (address, divider, credits, go-to-top button)</li>
+        <li>Updated the underlying w3.css framework to a newer version</li>
+        <li>Fixed incorrect alt text on header image</li>
+        <li>Marked decorative image with empty alt text</li>
+        <li>Added descriptive alt text to all skill/logo images</li>
+        <li>Replaced generic divs with semantic HTML elements (article, header, footer, address)</li>
+        <li>Set explicit page language attribute</li>
+        <li>Improved text/code contrast in article content</li>
+        <li>Added accessibility article covering alt text, contrast, keyboard operability, semantic HTML, form labeling,
+            heading structure, and scalable font sizes
+        </li>
+        <li>Added Changelog-page</li>
+    </ul>
+</article>
+</body>
+
+</html>
