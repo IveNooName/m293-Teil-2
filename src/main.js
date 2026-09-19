@@ -23,17 +23,18 @@ function detectApplePlatform() {
 
 function setDeviceResult() {
     const textResult = document.getElementById("modal-coolness-result");
-    const textSubtitle = document.getElementById("modal-coolness-tip");
+    const texttip = document.getElementById("modal-coolness-tip");
     const result = detectApplePlatform();
 
     console.log(result);
     
     if(result) {
         textResult.textContent = "YES!!!";
+        texttip.style.display = "none";
     } else {
         textResult.textContent = "no";
-        textSubtitle.textContent = "kauf doch endlich mal apple geräte";
-        textSubtitle.style.display = "block";
+        texttip.textContent = "kauf doch endlich mal apple geräte";
+        texttip.style.display = "block";
     }
 }
 
